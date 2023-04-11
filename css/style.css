@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: azure;
+}
+div{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 50%;
+    background: repeating-radial-gradient(red, white 10%, white 10%, blue 20%);
+}
+span{
+    position:absolute;
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    top: 0;
+    left: 70px;
+}
+
+.span1,.span3,.span5,.span7{
+left: 80px;
+border-left: solid black 25px;
+border-radius: 0% 50% 50% 0;
+animation-name: change1;
+animation-duration: 4s;
+}
+@keyframes change1{
+    0%{
+        left: 80px;
+        box-shadow: 0 0 2px 2px blue ;
+    }
+    50%{
+        left:86.8% ;
+        background-color: blue;
+        animation-direction: reverse;
+    }
+}
+.span1{
+    top: 85px;
+}
+.span3{
+    top: 185px;
+}.span5{
+    top: 285px;
+}.span7{
+    top: 385px;
+}
+.span2,.span4,.span6,.span8{
+    left: 86.8%;
+    border-right: solid black 25px;
+    border-radius: 50% 0 0 50%;
+    animation-name: change2;
+    animation-duration: 4s;
+    animation-delay: 4s;
+}
+@keyframes change2{
+    0%{
+        left: 86.8%;
+        box-shadow: 0 0 2px 2px blue ;
+    }
+    50%{
+        left:85px;
+        background-color: blue;
+        animation-direction: reverse;
+        
+    }
+}
+.span2{
+    top: 85px;
+}.span4{
+    top: 185px;
+}.span6{
+    top: 285px;
+}.span8{
+    top: 385px;
+}
+.div1,.div3,.div5,.div7{
+    left: 0;
+}
+.div2,.div4,.div6,.div8{
+    right: 0;
+}
+.div1,.div2{
+    top: 50px;
+}
+.div3,.div4{
+    top: 150px;
+}
+.div5,.div6{
+    top: 250px;
+}
+.div7,.div8{
+    top: 350px;
+}
+
+
